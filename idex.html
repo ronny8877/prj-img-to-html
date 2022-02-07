@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img to html</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+<div id="loading" style="transform: scale(0)"  class="absolute right-10 scale-0 top-10 w-96 h-20 border border-gray-100 rounded-2xl shadow-md hover:shadow-xl duration-500 cursor-pointer">
+<p class="text-center mt-6  text-xl"><span id="message"> Loading...</span> <i class="fas fa-spinner fa-lg animate-spin"></i>  </p>
+</div>
+    <div onclick="handelClick()" class="absolute duration-500 p-2 text-sm cursor-pointer right-5 top-96 shadow-md m-2 rounded-md">
+     Click me   <i class="fas  fa-image fa-2x"></i>
+        <input type="file" id="file" aria-hidden="true" hidden=true name="file" accept="image/*" />
+    </div>
+    <div id="info"></div>
+    </div>
+    <div style="width: 1200px; height:1200px;margin:auto ;" id="root"></div>
+</body>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/browser-image-compression@1.0.17/dist/browser-image-compression.js"></script>
+
+</html>
